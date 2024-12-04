@@ -23,27 +23,47 @@ In this section, statistical analysis on both walking speed and costs outcomes.
 
 To analyze walking speed, I made multiple regression with education and age using sn.OLS modeling. And looked at significant trends, key stats, and advanced analysis through p-values.
 
- OLS Regression Results                            
-==============================================================================
-Dep. Variable:          walking_speed   R-squared:                       0.800
-Model:                            OLS   Adj. R-squared:                  0.800
-Method:                 Least Squares   F-statistic:                 1.544e+04
-Date:                Wed, 04 Dec 2024   Prob (F-statistic):               0.00
-Time:                        07:49:36   Log-Likelihood:                -5254.1
-No. Observations:               15384   AIC:                         1.052e+04
-Df Residuals:                   15379   BIC:                         1.056e+04
-Df Model:                           4                                         
-Covariance Type:                  HC3                                         
+### OLS Regression Results
 
-To analyze costs, made Box plots and basic statistics to see the insurance efect and looked at ANOVA to see effect sizes in insurance groups. 
+#### Model Summary:
+- **Dependent Variable**: Walking Speed
+- **Model**: Ordinary Least Squares (OLS)
+- **Method**: Least Squares
+- **Covariance Type**: HC3 (robust standard errors)
+- **Date**: Wed, 04 Dec 2024
+- **Time**: 07:49:36          
 
-Key Statistics: Costs based on Insurance Type
+#### Fit Statistics:
+| Statistic              | Value        |
+|-------------------------|--------------|
+| **R-squared**          | 0.800        |
+| **Adj. R-squared**     | 0.800        |
+| **F-statistic**        | 1.544e+04    |
+| **Prob (F-statistic)** | 0.00         |
+| **Log-Likelihood**     | -5254.1      |
+| **AIC**                | 1.052e+04    |
+| **BIC**                | 1.056e+04    |
+
+Interpretation:
+- The model explains 80% of the variance in walking speed, as indicated by the R-squared value.
+- The F-statistic suggests the overall significance of the model, with a p-value of 0.00.
+- The use of HC3 standard errors means reliability 
+
+
+To analyze costs, made Box plots and basic statistics to see the insurance efect and looked at ANOVA to see effect sizes in insurance groups. The summary is seen below.
+
+### Key Statistics: Costs based on Insurance Type
 ==============================================================================
-                 count        mean        std     min      25%      50%       75%     max
-insurance_type                                                                           
-Basic           5045.0   99.774789  29.057243   50.02   74.650   99.190  124.5300  149.93
-Best            5392.0  424.404062  43.177420  350.03  386.985  423.635  462.0125  499.96
-Better          4947.0  239.992151  34.840248  180.02  209.745  240.480  270.2200  299.99
+| Insurance Type | Count   | Mean      | Std Dev   | Min    | 25%      | 50%      | 75%      | Max    |
+|----------------|---------|-----------|-----------|--------|----------|----------|----------|--------|
+| **Basic**      | 5045.0  | 99.77     | 29.06     | 50.02  | 74.65    | 99.19    | 124.53   | 149.93 |
+| **Best**       | 5392.0  | 424.40    | 43.18     | 350.03 | 386.99   | 423.64   | 462.01   | 499.96 |
+| **Better**     | 4947.0  | 239.99    | 34.84     | 180.02 | 209.75   | 240.48   | 270.22   | 299.99 |
+
+### Summary:
+- **Basic**: The mean cost is approximately $99.77, with costs ranging from $50.02 to $149.93.
+- **Better**: The mean cost is approximately $239.99, with costs ranging from $180.02 to $299.99.
+- **Best**: The mean cost is approximately $424.40, with costs ranging from $350.03 to $499.96.
 
 
 ## Question 4: Data Visualization
