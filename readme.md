@@ -8,18 +8,20 @@ Cleaning involved: Remove comment lines, Remove empty lines, Remove extra commas
 
 Next the `insurance.lst` file lists unique labels for a new variable, `insurance_type` containing Basic, Better, Best categories.
 The summary of the processed data is stored in ms_data.csv. The head looks like this:
+- **File Name:** `ms_data.csv`  
+- **Number of Records:** 15,418  
 
-15418 ms_data.csv
-patient_id,visit_date,age,education_level,walking_speed
-P0001,2020-01-11,36.05,Graduate,5.11
-P0001,2020-04-02,36.27,Graduate,4.66
-P0001,2020-06-17,36.48,Graduate,4.78
-P0001,2020-09-14,36.73,Graduate,4.98
-P0001,2020-12-16,36.98,Graduate,5.47
-P0001,2021-03-01,37.19,Graduate,4.85
-P0001,2021-05-29,37.43,Graduate,5.08
-P0001,2021-08-19,37.65,Graduate,5.3
-P0001,2021-11-21,37.91,Graduate,4.78
+| patient_id | visit_date  | age   | education_level | walking_speed |
+|------------|-------------|-------|-----------------|---------------|
+| P0001      | 2020-01-11  | 36.05 | Graduate        | 5.11          |
+| P0001      | 2020-04-02  | 36.27 | Graduate        | 4.66          |
+| P0001      | 2020-06-17  | 36.48 | Graduate        | 4.78          |
+| P0001      | 2020-09-14  | 36.73 | Graduate        | 4.98          |
+| P0001      | 2020-12-16  | 36.98 | Graduate        | 5.47          |
+| P0001      | 2021-03-01  | 37.19 | Graduate        | 4.85          |
+| P0001      | 2021-05-29  | 37.43 | Graduate        | 5.08          |
+| P0001      | 2021-08-19  | 37.65 | Graduate        | 5.30          |
+| P0001      | 2021-11-21  | 37.91 | Graduate        | 4.78          |
 
 
 ## Question 2: Data Analysis with Python 
