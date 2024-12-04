@@ -86,14 +86,33 @@ To analyze costs, made Box plots and basic statistics to see the insurance efect
 Created visualizations for both walking speed and cost analyses in a Jupyter notebook.
 
 First we look at the Walking speed analysis scatter plot of age vs walking speed with regression line. We can see that as age increases, walking speed steadily decreases. There is low outliers and a strong association.
+
+![Unknown-1](https://github.com/user-attachments/assets/eb539119-ab0f-4b43-b852-655bc7cc6456)
+
 The Box plots by education level shows that it is hard to predict walking speed based on education. There is varation with highschool and some college showing lower walking speed compared to Bachelors/Graduate education.
+
+![Unknown-2](https://github.com/user-attachments/assets/5f3a8d87-2d69-4ad1-897b-4c0fb7aa38ed)
+
 The Line plot showing education~age interaction shows the same relationship as the scatter plot with variation by education. The trend is still similar with increasing age, decreasing walking speed. The education levels are all pretty similar. 
 
+![Unknown](https://github.com/user-attachments/assets/0cd2b8b9-30d8-4e12-ba9f-d9860bba422b)
+
+
 Looking at Cost analysis through a Bar plot of mean costs by insurance type, we can see that the highest costs come from the Better insurance type. This might be due to the associated range of cost values. Better is more expensive than Basic.
+
+![Unknown-3](https://github.com/user-attachments/assets/a75aebaf-a460-4d8a-812f-4c02c06b4b9b)
+
 The Box plots showing cost distributions with Confidence Intervals show a similar trend as the bar plot. The confidence intervals are similar in all 3 insurance types.
+
+![Unknown-4](https://github.com/user-attachments/assets/396b2517-79d5-4e37-9e1d-df2bc5795980)
 
 Next we Combined visualizations, first using a  Pair plot looking at key variables. Here we can see the same strong correlation between age and walking speeds. While the other variables don't show strong trends but show the relationship between ages and costs based on insurance.
 The Faceted plots foces on education/insurance and shows that education effects which insurance policy someone takes. For example, higher education chooses the Best or Better policy the most comapred to Basic.
 The relevant Time trends looked at walking speeds show the same negative trends with walking speeds and age.
+
+![Unknown-5](https://github.com/user-attachments/assets/e9cd078a-eafa-446b-ba4e-da9ea22b921c)
+
+![Unknown-6](https://github.com/user-attachments/assets/3d74e945-ed08-4784-be19-100d0ebe8461)
+
 
 In summary, there is a strong trend between age and walking speeds seen in the stistical reasoning and visualization plots. There is also variation by Insurance type, with education determining which plan. However, age and visit costs generally didn't effect insurance type. But ther values are very close to each other based on education and insurance (no outliers).
