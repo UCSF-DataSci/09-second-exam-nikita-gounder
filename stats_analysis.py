@@ -47,10 +47,8 @@ print(anova_lm(anova_model, typ=2))
 print(results.params) # Coefficients
 print(results.rsquared) # R-squared
 print(results.pvalues) # P-values
-
 # T-test
 t_stat_age, p_val_age = stats.ttest_ind(ms_data['walking_speed'], ms_data['age'])
-
 
 
 # python3 stats_analysis.py
